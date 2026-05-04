@@ -56,10 +56,10 @@ const extensions = () => {
     // </div>
     <div className='h-screen flex flex-col items-center justify-start'>
       <form action=""
-      className='flex flex-col gap-4'>
-        <h1 className='text-2xl text-bold'>Sign up</h1>
-        <input type="email" placeholder='Email' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
-        <input type="password" placeholder='password' value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
+      className='flex flex-col gap-4 h-80 w-75 mt-50 border-2 rounded-lg p-4'>
+        <h1 className='text-2xl text-bold text-center'>Sign up</h1>
+        <input className='border-2 rounded-lg p-2' type="email" placeholder='Email' value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
+        <input className='border-2 rounded-lg p-2' type="password" placeholder='password' value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
         <button type='submit'className='bg-blue-500 p-3 rounded-lg' onClick={handleSubmit}>Submit</button>
         <button className='bg-green-500 p-3 rounded-lg' onClick={handleGoogleSignIn}>Sign in with Google</button>
       </form>
